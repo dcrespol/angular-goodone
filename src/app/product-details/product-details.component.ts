@@ -19,6 +19,7 @@ export class ProductDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
+      // Why is this '+' below???
       this.product = products[+params.get('productId')];
     })
   }
